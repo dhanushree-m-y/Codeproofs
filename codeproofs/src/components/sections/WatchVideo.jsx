@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "../../assets/images/WatchVideo.jpg"; // Ensure the correct path
+import videoFile from "../../assets/video/video.mp4"; // Correct import
 
 const WatchVideo = () => {
   return (
@@ -10,13 +10,21 @@ const WatchVideo = () => {
           Ready? Watch a Video!
         </h3>
         <p className="text-sm md:text-base lg:text-lg leading-relaxed font-satoshi mt-4">
-          Experience innovation in action! At Codeproofs, we believe in <strong>delivering technology that speaks for itself.</strong> Watch our latest video to see how our cutting-edge solutions empower businesses worldwide.
+          Experience innovation in action! At Codeproofs, we believe in{" "}
+          <strong>delivering technology that speaks for itself.</strong> Watch our latest video to see how our cutting-edge solutions empower businesses worldwide.
         </p>
       </div>
 
-      {/* Image - Right */}
-      <div className="relative w-1/2 h-auto">
-        <img src={bgImage} alt="Watch Video" className="w-full h-auto rounded-lg shadow-lg" />
+      {/* Video - Right */}
+      <div className="relative w-1/2">
+        <video 
+          className="w-full h-auto rounded-lg shadow-lg"
+          src={videoFile} 
+          autoPlay 
+          loop 
+          muted 
+          controls
+        ></video>
       </div>
     </section>
   );

@@ -4,7 +4,7 @@ const Navbar = () => {
   // Define navigation items with specific links or routes
   const navItems = [
     { title: "Home", link: "/" },
-    { title: "Features", link: "/features" },
+ 
     { title: "About us", link: "/about" },
     { title: "Help", link: "/help" },
     { title: "Contact", link: "/contact" },

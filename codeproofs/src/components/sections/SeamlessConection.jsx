@@ -9,6 +9,10 @@ import {
   FaWaze,
   FaSyncAlt,
   FaBlackTie,
+  FaTrello,
+  FaGoogleDrive,
+  FaJira,
+  FaGithub,
 } from "react-icons/fa";
 
 const SeamlessConnection = () => {
@@ -21,6 +25,10 @@ const SeamlessConnection = () => {
     { icon: <FaWaze size={20} />, color: "#000000" },
     { icon: <FaSyncAlt size={20} />, color: "#1A1A1A" },
     { icon: <FaBlackTie size={20} />, color: "#4A154B" },
+    { icon: <FaTrello size={20} />, color: "#0079BF" },
+    { icon: <FaGoogleDrive size={20} />, color: "#0F9D58" },
+    { icon: <FaJira size={20} />, color: "#0052CC" },
+    { icon: <FaGithub size={20} />, color: "#333" },
   ];
 
   const innerIcons = [
@@ -30,6 +38,8 @@ const SeamlessConnection = () => {
     { icon: <FaHubspot size={16} />, color: "#FF7A59" },
     { icon: <FaMailchimp size={16} />, color: "#FFD700" },
     { icon: <FaWaze size={16} />, color: "#000000" },
+    { icon: <FaTrello size={16} />, color: "#0079BF" },
+    { icon: <FaGoogleDrive size={16} />, color: "#0F9D58" },
   ];
 
   return (
@@ -61,12 +71,14 @@ const SeamlessConnection = () => {
         </motion.p>
       </div>
 
-      <div className="relative w-full max-w-2xl h-64 mt-8">
-        <div className="absolute w-full h-64 overflow-hidden">
+      {/* Semi-Circle Animation */}
+      <div className="relative w-full max-w-3xl h-64 overflow-hidden">
+        <div className="absolute w-full h-full flex items-center justify-center translate-y-1/2">
+          {/* Outer Circle Animation */}
           <motion.div
-            className="absolute w-full h-full flex items-center justify-center"
+            className="absolute w-full h-full flex items-center justify-center rotate-180"
             animate={{ rotate: 360 }}
-            transition={{ repeat: Infinity, duration: 12, ease: "linear" }}
+            transition={{ repeat: Infinity, duration: 20, ease: "linear" }} // Slowed down
           >
             {outerIcons.map((item, index) => (
               <div
@@ -85,10 +97,11 @@ const SeamlessConnection = () => {
             ))}
           </motion.div>
 
+          {/* Inner Circle Animation */}
           <motion.div
-            className="absolute w-full h-full flex items-center justify-center"
+            className="absolute w-full h-full flex items-center justify-center rotate-180"
             animate={{ rotate: -360 }}
-            transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
+            transition={{ repeat: Infinity, duration: 16, ease: "linear" }} // Slowed down
           >
             {innerIcons.map((item, index) => (
               <div

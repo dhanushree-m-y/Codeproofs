@@ -4,7 +4,6 @@ import Hero from "../components/sections/Hero";
 import About from "../components/sections/About";
 import WhatWeDo from "../components/sections/WhatWeDo";
 import OurImpact from "../components/sections/OurImpact";
-import WatchVideo from "../components/sections/WatchVideo";
 import JoinCommunity from "../components/sections/JoinCommunity";
 import FeatureSection from "../components/sections/FeatureSection";
 import SeamlessConnection from "../components/sections/SeamlessConection";
@@ -23,11 +22,13 @@ function Landing() {
         <Hero />
       </div>
 
-      {/* Sections */}
-      <About />
-
       {/* Sticky Sections Wrapper */}
-      <div className="relative h-[300vh]">
+      <div className="relative h-[400vh]">
+        {/* About Section */}
+        <section className="sticky top-0 h-screen flex items-center justify-center">
+          <About />
+        </section>
+
         {/* What We Do */}
         <section className="sticky top-0 h-screen flex items-center justify-center">
           <WhatWeDo />
@@ -36,11 +37,6 @@ function Landing() {
         {/* Our Impact */}
         <section className="sticky top-0 h-screen flex items-center justify-center">
           <OurImpact />
-        </section>
-
-        {/* Watch Video */}
-        <section className="sticky top-0 h-screen flex items-center justify-center">
-          <WatchVideo />
         </section>
       </div>
 

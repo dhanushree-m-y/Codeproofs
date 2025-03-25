@@ -1,5 +1,6 @@
 import React from "react";
 import Landing from "./pages/Landing"; // Import the Landing page
+import About from "./components/sections/About";
 
 function App() {
   return (
