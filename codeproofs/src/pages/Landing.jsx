@@ -4,12 +4,15 @@ import Hero from "../components/sections/Hero";
 import About from "../components/sections/About";
 import WhatWeDo from "../components/sections/WhatWeDo";
 import OurImpact from "../components/sections/OurImpact";
+import OurProducts from "../components/sections/OurProducts";
+import ExtendedEcosystem from "../components/sections/Ecosystem";
 import JoinCommunity from "../components/sections/JoinCommunity";
 import FeatureSection from "../components/sections/FeatureSection";
 import SeamlessConnection from "../components/sections/SeamlessConection";
 import Testimonials from "../components/sections/Testimonials";
 import BusinessBanner from "../components/sections/BusinessBanner";
 import CodeproofsBanner from "../components/sections/CodeproofBanner";
+import Footer from "../components/Footer";
 
 function Landing() {
   return (
@@ -17,14 +20,14 @@ function Landing() {
       {/* Navbar */}
       <Navbar />
 
-      {/* Add margin below Navbar */}
+      {/* Hero */}
       <div className="mt-16">
         <Hero />
       </div>
 
       {/* Sticky Sections Wrapper */}
-      <div className="relative h-[400vh]">
-        {/* About Section */}
+      <div className="relative h-[500vh]">
+        {/* About */}
         <section className="sticky top-0 h-screen flex items-center justify-center">
           <About />
         </section>
@@ -38,15 +41,22 @@ function Landing() {
         <section className="sticky top-0 h-screen flex items-center justify-center">
           <OurImpact />
         </section>
+
+        {/* Our Products */}
+       
       </div>
 
-      {/* Ensure Full Page Scroll Background Stays Black */}
+      {/* Extended Ecosystem - Not Sticky for better readability */}
+     
+
+      {/* Remaining sections */}
       <JoinCommunity />
       <FeatureSection />
       <SeamlessConnection />
       <Testimonials />
       <BusinessBanner />
       <CodeproofsBanner />
+      <Footer />
     </div>
   );
 }

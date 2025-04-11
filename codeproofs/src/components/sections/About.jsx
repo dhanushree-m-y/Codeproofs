@@ -4,14 +4,9 @@ import aboutImage from "../../assets/images/about.png"; // Ensure the correct pa
 const About = () => {
   return (
     <section 
-    id="about" 
-    className="relative w-full px-6 md:px-12 lg:px-24 py-16 bg-background bg-mid-gradient"
-  >
-  
-  
-
-  
-  
+      id="about" 
+      className="relative w-full px-6 md:px-12 lg:px-24 py-16 bg-background bg-mid-gradient"
+    >
       {/* About Us Title */}
       <div className="max-w-6xl mx-auto text-left">
         <h2 className="text-accent text-lg font-medium flex items-center gap-2">
@@ -39,14 +34,9 @@ const About = () => {
           <h3 className="text-lg font-semibold mb-2">Inside Codeproofs</h3>
           <div className="w-10 h-1 bg-accent mb-4"></div>
           <p className="text-sm md:text-base leading-relaxed text-secondary">
-            Codeproofs Private Limited stands as a top-tier provider of software production
-            and digital protection services, committed to delivering reliable, secure, and
-            innovative tech solutions across diverse industry sectors. Our team of
-            developers, digital security experts, and business analysts architect bespoke
-            applications and systems to battle unique business concerns while ensuring
-            ultimate data security and operational effectiveness. Our mission is to supply
-            businesses with technology that is not only capable of resolving present issues
-            but also holds the versatility to combat future obstacles.
+            Codeproofs Private Limited, established in 2017 and registered under the Registrar of Companies (ROC) Bangalore, is a product-focused technology company with a vision to deliver smart, scalable, and industry-ready innovations. Founded by Leelavathy Yogappa and Moomal Chouhan, the company is built on a foundation of integrity, forward-thinking, and technological excellence.
+            <br /><br />
+            Headquartered in India with operational footprints in Bangalore, Mysore, Kuala Lumpur (Malaysia), and Jakarta (Indonesia), Codeproofs has evolved into a dynamic player in the global tech ecosystem.
           </p>
         </div>
       </div>
